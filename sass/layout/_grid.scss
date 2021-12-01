@@ -1,14 +1,14 @@
 .row {
-    max-width: $grid-width;
-    background-color: #eee;
-    margin: 0 auto;
+    max-width: $grid-width; //take up 1140px if available, 1140px is standard
+    //background-color: #eee;
+    margin: 0 auto; //center row
 
     &:not(:last-child){
         //everywhere except last child
         margin-bottom: $gutter-vertical;
     }
-    [class^="col-"]{
-        background-color: orangered;
+    [class^="col-"] { //select all classes that start with "col-"
+
         float: left;
     
         &:not(last-child){
